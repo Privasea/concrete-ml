@@ -11,7 +11,7 @@ Concrete ML implements model inference using Concrete as a backend. In order to 
 From the perspective of the Concrete ML user, the compilation process performed by Concrete can be broken up into 3 steps:
 
 1. tracing the NumPy program and creating a Concrete op-graph
-1. checking the op-graph for FHE compatability
+1. checking the op-graph for FHE compatibility
 1. producing machine code for the op-graph (this step automatically determines cryptographic parameters)
 
 Additionally, the [client/server API](client_server.md) packages the result of the last step in a way that allows the deployment of the encrypted circuit to a server, as well as key generation, encryption, and decryption on the client side.
