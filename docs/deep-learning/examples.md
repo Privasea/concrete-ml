@@ -14,7 +14,7 @@ Some examples constrain accumulators to 7-8 bits, which can be sufficient for si
 
 [<img src="../.gitbook/assets/jupyter_logo.png" width="20px">  Quantization aware training example](../advanced_examples/QuantizationAwareTraining.ipynb)
 
-Shows how to use Quantization Aware Training and pruning when starting out from a classical PyTorch network. This example uses a simple data-set and a small NN, which achieves good accuracy with low accumulator size.
+Shows how to use Quantization Aware Training and pruning when starting out from a classical PyTorch network. This example uses a simple data-set and a small NN, which achieves good accuracy with a low accumulator size.
 
 ### 2. Custom convolutional NN on the [Digits](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html) data-set
 

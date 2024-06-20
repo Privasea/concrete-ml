@@ -99,7 +99,7 @@ model.compile(X_train_transformed)
 # Perform the inference in FHE
 # Warning: this will take a while. It is recommended to run this with a very small batch of
 # example first (e.g., N_TEST_FHE = 1)
-# Note that here the encryption and decryption is done behind the scene.
+# Note that here the encryption and decryption are done behind the scenes.
 N_TEST_FHE = 1
 y_pred_fhe = model.predict(X_test_transformed[:N_TEST_FHE], fhe="execute")
 

@@ -78,7 +78,7 @@ Usage is similar to the `p_error` parameter:
 clf.compile(X_train, global_p_error=0.1)
 ```
 
-In the above example, XGBoostClassifier in FHE has a 1/10 probability to have a shifted output value compared to the expected value. The shift is relative to the expected value, so even if the result is different, it should be **around** the expected value.
+In the above example, XGBoostClassifier in FHE has a 1/10 probability of having a shifted output value compared to the expected value. The shift is relative to the expected value, so even if the result is different, it should be **around** the expected value.
 
 ### Using default error probability
 
