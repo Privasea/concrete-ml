@@ -52,7 +52,7 @@ Tree-based models can directly control the accumulator bit-width used. If 6 or 7
 For built-in [neural networks](../built-in-models/neural-networks.md), several linear layers are used. Thus, the outputs of a layer are used as inputs to a new layer. Built-in neural networks use Quantization Aware Training. The parameters controlling the maximum accumulator bit-width are the number of weights and activation bits ( `module__n_w_bits`, `module__n_a_bits` ), but also the pruning factor. This factor is determined automatically by specifying a desired accumulator bit-width `module__n_accum_bits` and, optionally, a multiplier factor, `module__n_hidden_neurons_multiplier`.
 
 {% hint style="info" %}
-For built-in **neural networks**, the maximum accumulator bit-width cannot be precisely controlled. To use many input features and a high number of bits is beneficial for model accuracy, but it can conflict with the 16-bit accumulator constraint. Finding the best quantization parameters to maximize accuracy, while keeping the accumulator size down, can only be accomplished through experimentation.
+For built-in **neural networks**, the maximum accumulator bit-width cannot be precisely controlled. Using many input features and a high number of bits is beneficial for model accuracy, but it can conflict with the 16-bit accumulator constraint. Finding the best quantization parameters to maximize accuracy, while keeping the accumulator size down, can only be accomplished through experimentation.
 {% endhint %}
 
 ### Quantizing model inputs and outputs
